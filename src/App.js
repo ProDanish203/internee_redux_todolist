@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { Todos } from './components/Todos';
+import { AddTodo } from './components/AddTodo';
+import { Toaster } from 'sonner';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <main className='py-20 sm:px-10 px-4 bg-bg text-text min-h-screen'>
+
+    <Toaster position="top-right" richColors/>
+    <div className="max-w-[1300px] w-full mx-auto"> 
+
+      <h1 className='text-center text-4xl font-bold'>Todo App</h1>
+
+      <div>
+        <AddTodo/>
+        <Todos/>
+      </div>
+
     </div>
+    </main>
   );
 }
 
