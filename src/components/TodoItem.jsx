@@ -26,7 +26,7 @@ export const TodoItem = ({data}) => {
     <div className='bg-neutral-900 rounded-sm p-3'>
 
         <textarea rows={5}
-        className='resize-none bg-transparent outline-none w-[400px] overflow-y-auto text-sm'
+        className='resize-none bg-transparent outline-none sm:w-[400px] w-full overflow-y-auto text-sm'
         ref={inputRef} 
         disabled={inputRef} 
         defaultValue={text} 
